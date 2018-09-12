@@ -132,3 +132,59 @@ a {
   background-color: #46c2ff;
   color: white;
 }
+
+
+.image-container {
+	align-items: center;
+	
+}
+
+.comic-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+img.comic-image {
+	width: 100%;
+}
+
+.comic-arrows {
+	border: 4px solid;
+	border-color: #46c2ff;
+	border-radius: 15px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+}
+
+.arrow-button {
+	background-color: black;
+}
+
+.fa-arrow-alt-circle-right {
+	color: #46c2ff;
+	font-size: 4rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-arrow-alt-circle-right:hover {
+	color: #2f93c4;
+}
+
+.fa-arrow-alt-circle-left {
+	color: #46c2ff;
+	font-size: 4rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-arrow-alt-circle-left:hover {
+	color: #2f93c4;
+}

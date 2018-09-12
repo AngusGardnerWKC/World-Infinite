@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>World : Infinite</title>
+	<title>Prologue</title>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +9,33 @@
     <link rel="stylesheet" href="reset-css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+   	<script
+	  src="http://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous">
+	  </script>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row top-row"">
+			<div class="col-md-2">
+				<div class="container-fluid">
+					<img class="image" src="logo.png">
+				</div>
+			</div>
 			<div class="col-md-8">
-				<div class="header-box">
+				<div class="container-fluid">
+					<div class="header-box">
+						<h1 class="header-text">WORLD : INFINITE</h1>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="container-fluid">
+					<img class="image" src="logo.png">
 				</div>
 			</div>
 		</div>
-	</div>
 
 		<br>
 		<br>
@@ -42,42 +59,19 @@
 				</div>
 			</div>
 			<div class="col-md-8">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="container-fluid">
-							<a class="chap-select-box" href="prologue.html">Prologue</a>
-						</div>	
-					</div>
-					<div class="col-md-4">
-						<div class="container-fluid">
-							<a class="chap-select-box" href="ch1.html">Chapter 1</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="container-fluid">
-							<a class="chap-select-box" href="ch2.html">Chapter 2</a>
-						</div>
+				<div class="container-fluid">
+					<div class="image-container">
+						<img src="JS/Prologue/page1.png" class="comic-image" id="main-image">
 					</div>
 				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="container-fluid">
-							<a class="chap-select-box" href="ch3.html">Chapter 3</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="container-fluid">
-							<a class="chap-select-box" href="ch4.html">Chapter 4</a>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="container-fluid">
-							<a class="chap-select-box" href="ch5.html">Chapter 5</a>
-						</div>
+				<div class="container-fluid">
+					<div class="comic-arrows">
+						<i class="fas fa-arrow-alt-circle-left" id="backward"></i>	
+						<i class="fas fa-arrow-alt-circle-right" id="forward" onclick="changeImage()"></i>						
 					</div>
 				</div>
 			</div>
+
 				
 				
 			
@@ -136,23 +130,12 @@
 
 </body>
 
-<script type="text/javascript">
-	
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+<script type="text/javascript" src="JS/dropdown.js"></script>
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
+<script type="text/javascript" src="JS/changepage.js">
+	$('#forward').click()
 </script>
+
 
 </html>
 
