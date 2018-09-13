@@ -24,15 +24,10 @@ a {
 
 .top-row {
 	align-items: center;
+	justify-content: center;
 }
 
 .header-box {
-	padding-top: 7.5px;
-	background-color: white;
-	color: black;
-	border: 6px solid #46c2ff;
-	text-align: center;
-	border-radius: 15px;
 }
 
 .image {
