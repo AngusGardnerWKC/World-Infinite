@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,16 +15,11 @@
 <body>
 	<div class="container-fluid">
 		<div class="row top-row"">
-			<div class="col-md-2">
-				<img class="image" src="logo.png">
-			</div>
 			<div class="col-md-8">
 				<div class="header-box">
-					<h1 class="header-text">World : Infinite</h1>
+					<img class="image" src="Headers/logo.png">
 				</div>
 			</div>
-			<div class="col-md-2">
-				<img class="image" src="logo.png">
 		</div>
 	</div>
 
@@ -94,8 +91,8 @@
 							<i class="fa fa-caret-down"></i>
 						</button>
 						<div class="dropdown-container">
-							<a href="#">Page 1</a>
-						    <a href="#">Page 2</a>
+							<a href="prologue.html" onclick="page1()">Page 1</a>
+						    <a href="prologue.html" id="C1P2" onclick="page2()">Page 2</a>
 						    <a href="#">Page 3</a>
 						</div>
 						<button class="dropdown-btn">Chapter 2 
@@ -142,22 +139,9 @@
 
 </body>
 
-<script type="text/javascript">
-	
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
+<script type="text/javascript" src="JS/dropdown.js"></script>
+<script type="text/javascript" src="changepage.js">
+	$('#C1P2').click();
 </script>
 
 </html>

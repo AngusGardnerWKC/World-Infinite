@@ -18,21 +18,11 @@
 <body>
 	<div class="container-fluid">
 		<div class="row top-row"">
-			<div class="col-md-2">
-				<div class="container-fluid">
-					<img class="image" src="logo.png">
-				</div>
-			</div>
 			<div class="col-md-8">
 				<div class="container-fluid">
 					<div class="header-box">
-						<h1 class="header-text">WORLD : INFINITE</h1>
+						<img class="image" src="Headers/logo.png">
 					</div>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="container-fluid">
-					<img class="image" src="logo.png">
 				</div>
 			</div>
 		</div>
@@ -82,8 +72,8 @@
 							<i class="fa fa-caret-down"></i>
 						</button>
 						<div class="dropdown-container">
-							<a href="#">Page 1</a>
-						    <a href="#">Page 2</a>
+							<a href="prologue.html">Page 1</a>
+						    <a href="prologue.html" id="C1P2" onclick="page2()">Page 2</a>
 						    <a href="#">Page 3</a>
 						</div>
 						<button class="dropdown-btn">Chapter 2 
@@ -135,6 +125,7 @@
 <script type="text/javascript" src="JS/changepage.js">
 	$('#forward').click()
 	$('#backward').click()
+	$('#C1P2').click()
 </script>
 
 
