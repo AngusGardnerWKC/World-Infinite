@@ -1,17 +1,15 @@
 
+
+
+
 @font-face {
-    font-family: 'harvestregular';
-    src: url('harvest_regular-webfont.woff2') format('woff2'),
-         url('harvest_regular-webfont.woff') format('woff');
-    font-weight: 100;
+    font-family: 'natalia_rosaline_sans_demoRg';
+    src: url('Fonts/natalia_rosaline_sans_demo-webfont.woff2') format('woff2'),
+         url('Fonts/natalia_rosaline_sans_demo-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 
 }
-    
-
-
-
-
 
 body {
 	background-color: black;
@@ -28,6 +26,7 @@ a {
 }
 
 .header-box {
+
 }
 
 .image {
@@ -38,7 +37,7 @@ a {
 
 .header-text {
 	font-size: 2.5rem;
-	font-family: 'harvestregular', Arial, sans-serif;
+	font-family: 'natalia_rosaline_sans_demoRg', Arial, sans-serif;
 }
 
 .nav-button {
@@ -49,7 +48,7 @@ a {
 	margin: 0 auto;
 	display: inline-block;
 	text-align: center;
-	font-family: 'harvestregular', Arial, sans-serif;
+	font-family: 'natalia_rosaline_sans_demoRg', Arial,sans-serif; 
 	font-size: 1.5rem;
 	padding: 3px;
 
@@ -59,6 +58,7 @@ a {
 .nav-button:hover  {
 	color: black;
 	background-color: white;
+	font-style: italic;
 }
 .content-box {
 	border: 2px solid #46c2ff;
@@ -77,7 +77,7 @@ a {
 	vertical-align: middle;
 	line-height: 150px;
 	font-size: 1.5rem;
-	font-family: 'harvestregular', Arial, sans-serif;
+	font-family: 'natalia_rosaline_sans_demoRg', Arial, sans-serif;
 }
 
 .chap-select-box:hover {
@@ -101,7 +101,7 @@ a {
   text-align: left;
   cursor: pointer;
   outline: none;
-  font-family: 'harvestregular', Arial, sans-serif;
+  font-family: 'natalia_rosaline_sans_demoRg', Arial, sans-serif;
 }
 
 
@@ -181,5 +181,79 @@ img.comic-image {
 }
 
 .fa-arrow-alt-circle-left:hover {
+	color: #2f93c4;
+}
+
+.icon-container {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.fa-instagram {
+	color: white;
+	font-size: 5rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-instagram:hover {
+	color: #2f93c4;
+
+}
+
+.fa-twitter-square {
+	color: white;
+	font-size: 5rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-twitter-square:hover {
+	color: #2f93c4;: 
+}
+
+
+.fa-envelope {
+	color: white;
+	font-size: 5rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-envelope:hover {
+	color: #2f93c4;
+}
+
+.fa-reddit-square {
+	color: white;
+	font-size: 5rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-reddit-square:hover {
+	color: #2f93c4;
+}
+
+.fa-twitch {
+	color: white;
+	font-size: 5rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-twitch:hover {
+	color: #2f93c4;
+}
+
+.fa-facebook-square {
+	color: white;
+	font-size: 5rem;
+	padding: 2.5px;
+	transition: 0.8s;
+}
+
+.fa-facebook-square:hover {
 	color: #2f93c4;
 }

@@ -1,7 +1,9 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Prologue</title>
+	<title>World : Infinite</title>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,23 +11,17 @@
     <link rel="stylesheet" href="reset-css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-   	<script
-	  src="http://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous">
-	  </script>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="row top-row"">
 			<div class="col-md-8">
-				<div class="container-fluid">
-					<div class="header-box">
-						<img class="image" src="Headers/logo.png">
-					</div>
+				<div class="header-box">
+					<img class="image" src="Headers/logo.png">
 				</div>
 			</div>
 		</div>
+	</div>
 
 		<br>
 		<br>
@@ -50,18 +46,33 @@
 			</div>
 			<div class="col-md-8">
 				<div class="container-fluid">
-					<div class="image-container">
-						<img src="JS/Prologue/page1.png" class="comic-image" id="main-image">
+					<div class="icon-container">
+						<div class="row">
+							<div class="col-md-4">
+								<i class="fab fa-instagram"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fab fa-twitter-square"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fas fa-envelope"></i>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-md-4">
+								<i class="fab fa-reddit-square"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fab fa-twitch"></i>
+							</div>
+							<div class="col-md-4">
+								<i class="fab fa-facebook-square"></i>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="container-fluid">
-					<div class="comic-arrows">
-						<i class="fas fa-arrow-alt-circle-left" id="backward" onclick="imageBackward()"></i>	
-						<i class="fas fa-arrow-alt-circle-right" id="forward" onclick="imageForward()"></i>						
-					</div>
-				</div>
+				</div>	
 			</div>
-
 				
 				
 			
@@ -108,6 +119,7 @@
 						    <a href="#">Page 2</a>
 						    <a href="#">Page 3</a>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -120,15 +132,8 @@
 </body>
 
 <script type="text/javascript" src="JS/dropdown.js"></script>
-
 <script type="text/javascript" src="JS/changepage.js">
-	$('#forward').click()
-	$('#backward').click()
 </script>
-<script type="text/javascript" src="JS/pagePick.js">
-	
-</script>
-
 
 </html>
 

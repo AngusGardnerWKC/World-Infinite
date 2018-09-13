@@ -9,6 +9,7 @@ function imageForward() {
 		x = 0
 	}
 	document.getElementById("main-image").src = images[x];
+	window.scrollTo(0,0)
 	
 
 }
@@ -20,6 +21,7 @@ function imageBackward() {
 	}
 
 	document.getElementById("main-image").src = images[x];
+	window.scrollTo(0,0)
 	
 
 }
