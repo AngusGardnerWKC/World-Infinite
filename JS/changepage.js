@@ -1,4 +1,4 @@
-var images = ["JS/Prologue/page1.png", "JS/Prologue/page2.png", "JS/Prologue/page3.png"]
+var images = ["JS/ch0/page1.png", "JS/ch0/page2.png", "JS/ch0/page3.png"]
 
 x = 0
 document.getElementById('main-image').src = images[x];
