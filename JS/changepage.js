@@ -58,3 +58,8 @@ if (pageNumber == 3){
 	document.getElementById('main-image').src = images[pageNumber - 1];
 }
 
+
+function removeSpoiler() {
+	document.getElementById('spoiler').innerHTML = "Status: Deceased";
+	document.getElementById('spoiler').style.cursor = "default";
+}
