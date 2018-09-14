@@ -131,6 +131,7 @@ a {
 
 .image-container {
 	align-items: center;
+	padding-bottom: 10px;
 	
 }
 
@@ -319,4 +320,22 @@ img.comic-image {
 .img-text:hover {
 	-webkit-opacity: 40;
 	opacity: 40;
+}
+
+.dbase-images {
+	width: 100%;
+	border: 2px solid #46c2ff;
+	border-radius: 15px;
+
+}
+
+.character-info-box {
+	text-align: left;
+}
+
+.description-text {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+	font-family: 'natalia_rosaline_sans_demoRg', Arial, sans-serif;
 }
