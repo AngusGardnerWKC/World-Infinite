@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="reset-css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script
+	  src="http://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous">
+	</script>
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
@@ -76,7 +81,13 @@
 					<div class="character-info-box">
 						<p class="description-text">Name: Vicky</p>
 						<br>
+						<br>
 						<p class="description-text">World: Dankmemes</p>
+						<br>
+						<br>
+						<i class="spoiler-text" id='spoiler' onclick="removeSpoiler()">Status: SPOILER</i>
+						<br>
+						<br>
 						<br>
 						<p class="description-text">Description: This is the sample text. I need to write something long enough to reach the border of the container. This will probably do.</p>
 					</div>
@@ -141,7 +152,8 @@
 </body>
 
 <script type="text/javascript" src="JS/dropdown.js"></script>
-<script type="text/javascript" src="changepage.js">
+<script type="text/javascript" src="JS/changepage.js">
+	$('#spoiler').click()
 </script>
 
 </html>
