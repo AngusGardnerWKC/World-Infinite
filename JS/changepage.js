@@ -28,7 +28,7 @@ function imageBackward() {
 
 function getUrlParams( prop ) {
     var params = {};
-    var search = decodeURIComponent( window.location.href.slice( window.location.href.page( '?' ) + 1 ) );
+    var search = decodeURIComponent( window.location.href.slice( window.location.href.indexOf( '?' ) + 1 ) );
     var definitions = search.split( '&' );
 
     definitions.forEach( function( val, key ) {
@@ -46,15 +46,16 @@ pageNumber = getUrlParams("id");
 
 
 if (pageNumber == 1){
-	pageNumber  = 0;
+	pageNumber  = 1;
 	document.getElementById('main-image').src = images[pageNumber - 1];
+	
 }
 if (pageNumber == 2){
-	pageNumber = 1;
+	pageNumber = 2;
 	document.getElementById('main-image').src = images[pageNumber - 1];
 }
 if (pageNumber == 3){
-	pageNumber = 2;
+	pageNumber = 3;
 	document.getElementById('main-image').src = images[pageNumber - 1];
 }
 
@@ -64,3 +65,4 @@ function removeSpoiler() {
 	document.getElementById('spoiler').style.cursor = "default";
 	document.getElementById('spoiler-italic').innerHTML ="";
 }
+

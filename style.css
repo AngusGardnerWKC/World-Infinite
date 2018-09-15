@@ -117,12 +117,6 @@ a {
  }
 
 
-
- .dropdown-container a:hover {
- 	background-color: white;
- 	color: black;
- }
-
 .active {
   background-color: #46c2ff;
   color: white;
@@ -272,7 +266,7 @@ img.comic-image {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	align-items: center;
+	align-items: center; 
 	line-height: 200px;
 	font-size: 1.5rem;
 	font-family: 'natalia_rosaline_sans_demoRg', Arial, sans-serif;
