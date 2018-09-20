@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Chapter 0</title>
+	<title>Prologue</title>
 	<meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,27 +13,7 @@
 	  src="http://code.jquery.com/jquery-3.3.1.min.js"
 	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	  crossorigin="anonymous">
-	</script>
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicons/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicons/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicons/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicons/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicons/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicons/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicons/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicons/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="favicons/FAVICON.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="favicons/FAVICON.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="favicons/FAVICON.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicons/FAVICON.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="favicons/FAVICON.png" sizes="128x128" />
-	<meta name="application-name" content="&nbsp;"/>
-	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="favicons/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="favicons/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="favicons/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="favicons/mstile-310x310.png" />
+	  </script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -71,22 +51,13 @@
 			<div class="col-md-8">
 				<div class="container-fluid">
 					<div class="image-container">
-						<img src="JS/ch0/page1.png" class="comic-image" id="main-image">
+						<img src="JS/Prologue/page1.png" class="comic-image" id="main-image">
 					</div>
 				</div>
 				<div class="container-fluid">
 					<div class="comic-arrows">
-						<div class="row">
-							<div class="col-md-4">
-								<i class="fas fa-arrow-alt-circle-left" id="backward" onclick="imageBackward()"></i>
-							</div>
-							<div class="col-md-4">
-								<img class="comic-image" src="Headers/symbol.png">
-							</div>
-							<div class="col-md-4">
-								<i class="fas fa-arrow-alt-circle-right" id="forward" onclick="imageForward()"></i>						
-							</div>
-						</div>
+						<i class="fas fa-arrow-alt-circle-left" id="backward" onclick="imageBackward()"></i>	
+						<i class="fas fa-arrow-alt-circle-right" id="forward" onclick="imageForward()"></i>						
 					</div>
 				</div>
 			</div>
@@ -97,21 +68,13 @@
 			<div class="col-md-2">
 				<div class="container-fluid">
 					<div class="sidenav">
-						<button class="dropdown-btn">Chapter 0 
-							<i class="fa fa-caret-down"></i>
-						</button>
-						<div class="dropdown-container">
-							<a href="ch0.html?id=1">Page 1</a>
-						    <a href="ch0.html?id=2">Page 2</a>
-						    <a href="ch0.html?id=3">Page 3</a>
-						</div>
 						<button class="dropdown-btn">Chapter 1 
 							<i class="fa fa-caret-down"></i>
 						</button>
 						<div class="dropdown-container">
-							<a href="#">Page 1</a>
-						    <a href="#">Page 2</a>
-						    <a href="#">Page 3</a>
+							<a href="prologue.html?id=1">Page 1</a>
+						    <a href="prologue.html?id=2">Page 2</a>
+						    <a href="prologue.html?id=3">Page 3</a>
 						</div>
 						<button class="dropdown-btn">Chapter 2 
 							<i class="fa fa-caret-down"></i>
@@ -137,6 +100,14 @@
 						    <a href="#">Page 2</a>
 						    <a href="#">Page 3</a>
 						</div>
+						<button class="dropdown-btn">Chapter 5 
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-container">
+							<a href="#">Page 1</a>
+						    <a href="#">Page 2</a>
+						    <a href="#">Page 3</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -154,7 +125,6 @@
 	$('#forward').click()
 	$('#backward').click()
 </script>
-
 
 
 </html>

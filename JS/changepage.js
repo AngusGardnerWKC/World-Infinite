@@ -1,27 +1,29 @@
 var images = ["JS/ch0/page1.png", "JS/ch0/page2.png", "JS/ch0/page3.png"]
 
-pageNumber = 0
-document.getElementById('main-image').src = images[pageNumber];
+
+
 
 function imageForward() {
-	pageNumber = pageNumber + 1
+	pageNumber++;
+	document.getElementById("main-image").src = images[pageNumber - 1];
+	window.scrollTo(0,0)
 	if(pageNumber > 2){
 		pageNumber = 0
 	}
-	document.getElementById("main-image").src = images[pageNumber];
-	window.scrollTo(0,0)
+	
 	
 
 }
 
 function imageBackward() {
-	pageNumber = pageNumber - 1
+	pageNumber--;
+	document.getElementById("main-image").src = images[pageNumber - 1];
+	window.scrollTo(0,0)
 	if(pageNumber < 0){
 		pageNumber = 2
 	}
 
-	document.getElementById("main-image").src = images[pageNumber];
-	window.scrollTo(0,0)
+	
 	
 
 }
@@ -39,30 +41,35 @@ function getUrlParams( prop ) {
     return ( prop && prop in params ) ? params[ prop ] : params;
 }
 
-pageNumber = getUrlParams("id");
+URLNumber = getUrlParams("id");
+var pageNumber = 1;
+if(pageNumber == undefined){
 
+		document.getElementById('main-image').src = images[0];
 
-
-
-
-if (pageNumber == 1){
-	pageNumber  = 1;
-	document.getElementById('main-image').src = images[pageNumber - 1];
-	
 }
-if (pageNumber == 2){
+
+if (URLNumber == undefined){
+	pageNumber = 1;
+}
+
+if (URLNumber == 1){
+	pageNumber = 1;
+	document.getElementById('main-image').src = images[pageNumber - 1];
+}
+if (URLNumber == 2){
 	pageNumber = 2;
 	document.getElementById('main-image').src = images[pageNumber - 1];
 }
-if (pageNumber == 3){
+if (URLNumber == 3){
 	pageNumber = 3;
 	document.getElementById('main-image').src = images[pageNumber - 1];
 }
 
+console.log(pageNumber)
 
 function removeSpoiler() {
 	document.getElementById('spoiler').innerHTML = "Status: Alive";
 	document.getElementById('spoiler').style.cursor = "default";
 	document.getElementById('spoiler-italic').innerHTML ="";
 }
-
