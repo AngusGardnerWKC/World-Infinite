@@ -68,8 +68,14 @@ if (URLNumber == 3){
 
 console.log(pageNumber)
 
-function removeSpoiler() {
+function spoilerAlive() {
 	document.getElementById('spoiler').innerHTML = "Status: Alive";
+	document.getElementById('spoiler').style.cursor = "default";
+	document.getElementById('spoiler-italic').innerHTML ="";
+}
+
+function spoilerDead() {
+	document.getElementById('spoiler').innerHTML = "Status: Dead";
 	document.getElementById('spoiler').style.cursor = "default";
 	document.getElementById('spoiler-italic').innerHTML ="";
 }
