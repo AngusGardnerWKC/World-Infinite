@@ -5,11 +5,14 @@ var images = ["JS/ch0/page1.png", "JS/ch0/page2.png", "JS/ch0/page3.png"]
 
 function imageForward() {
 	pageNumber++;
+	if(pageNumber == 4){
+	pageNumber = 1;
+	}
+
 	document.getElementById("main-image").src = images[pageNumber - 1];
 	window.scrollTo(0,0)
-	if(pageNumber > 2){
-		pageNumber = 0
-	}
+
+	
 	
 	
 
@@ -17,12 +20,12 @@ function imageForward() {
 
 function imageBackward() {
 	pageNumber--;
-	document.getElementById("main-image").src = images[pageNumber - 1];
-	window.scrollTo(0,0)
-	if(pageNumber < 0){
-		pageNumber = 2
+	if(pageNumber == 0){
+		pageNumber = 3;
 	}
 
+	document.getElementById("main-image").src = images[pageNumber - 1];
+	window.scrollTo(0,0)
 	
 	
 

@@ -263,6 +263,12 @@ img.comic-image {
 	transition: 0.25s
 }
 
+.row-container {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
 .database-select-box {
 	background-color: white;
 	color: black;
